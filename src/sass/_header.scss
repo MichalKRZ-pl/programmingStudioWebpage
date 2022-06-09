@@ -1,0 +1,20 @@
+@use 'colors' as *;
+
+.mobile__menu {
+  visibility: hidden;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  background-color: $light-gray;
+
+  border-bottom: 2px solid $firebrick;
+}
