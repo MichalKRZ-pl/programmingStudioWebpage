@@ -1,9 +1,5 @@
 @use 'colors' as *;
 
-.mobile__menu {
-  visibility: hidden;
-}
-
 .header {
   position: sticky;
   top: 0;
@@ -93,5 +89,38 @@
       width: 30%;
       transition-delay: 0.1;
     }
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  overflow: scroll;
+
+  background-color: $light-gray;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.36, 1);
+
+  &--active {
+    transform: translateX(0);
+  }
+
+  &__item {
+    font-size: 3.2rem;
+    padding: 1em;
+    width: 100%;
+    display: block;
+
+    color: $raisin-black;
+    border-bottom: 1px solid $blue-munsell;
+    text-align: center;
   }
 }
