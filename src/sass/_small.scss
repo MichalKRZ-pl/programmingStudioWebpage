@@ -1,2 +1,22 @@
+@media (min-width: 400px) {
+  :root {
+    --nav-fontsize: 3rem;
+  }
+
+  .header {
+    &__burger-bar {
+      height: 6px;
+    }
+  }
+}
+
 @media (min-width: 576px) {
+  .header {
+    &__menu {
+      display: flex;
+    }
+    &__burger {
+      display: none;
+    }
+  }
 }
