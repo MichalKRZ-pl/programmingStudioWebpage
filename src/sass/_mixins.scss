@@ -1,0 +1,20 @@
+@mixin dynamic-underline($height, $underline-color) {
+  &::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: $height;
+    width: 100%;
+
+    transform: scaleX(0);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+    background-color: $underline-color;
+    content: "";
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
