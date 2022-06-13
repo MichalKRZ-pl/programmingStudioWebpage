@@ -4,8 +4,13 @@
   color: $snow;
   margin: 1em;
 
+  &__header {
+    font-size: var(--subpage-header-fontsize);
+  }
+
   &__paragraph {
     margin: 0.5em 0;
+    font-size: var(--standard-text-fontsize);
   }
 
   &__list {
@@ -18,6 +23,7 @@
 
   &__text {
     color: $light-gray;
+    text-indent: 1em;
   }
 
   &__link {
