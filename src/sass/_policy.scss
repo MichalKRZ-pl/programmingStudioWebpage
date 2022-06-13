@@ -1,0 +1,30 @@
+.policy {
+  &__paragraph {
+    margin: 0.5em 0;
+  }
+
+  &__list {
+    margin-left: 1em;
+    &--sublist {
+      list-style-type: lower-alpha;
+    }
+  }
+
+  &__link {
+    color: $blue-logo;
+
+    &:active,
+    &:visited {
+      color: $blue-logo;
+    }
+  }
+
+  &__email-link {
+    color: $blue-logo;
+
+    &:active,
+    &:visited {
+      color: $blue-logo;
+    }
+  }
+}
