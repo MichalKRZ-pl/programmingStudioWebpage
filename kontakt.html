@@ -44,6 +44,55 @@
   <a href="kontakt.html#contact" class="mobile-menu__item mobile--menu__item--contrast">Kontakt</a>
 </nav>
 
+    <main>
+        <section class="contact">
+
+            <h1 class="contact__header">Kontakt</h1>
+
+            <div class="contact__box">
+                <figure class="contact__img-box">
+                    <img class="contact__img" src="https://cdn.pixabay.com/photo/2017/12/02/14/38/contact-us-2993000_1280.jpg" alt="Człowieka wybierający jedną z form kontaktu: email, telefon, list">
+                </figure>
+            </div>
+
+            <form
+          method="post"
+          action="/dist/php/contact-section-form2.php"
+          name="contact_form"
+          class="form"
+          id="contactOne"
+        >
+          <label class="form__label" for="name">Imię i nazwisko<sup class="form__star">&#9733;</sup> </label>
+          <input class="form__input" type="text" name="name" placeholder="Imię" />
+
+          <label class="form__label" for="email"
+            >Adres E-mail <sup class="form__star">&#9733;</sup>
+          </label>
+          <input
+            class="form__input"
+            type="text"
+            name="email"
+            placeholder="imię.nazwisko@firma.com"
+          />
+
+          <label class="form__label" for="phone">Telefon</label>
+          <input class="form__input" type="text" name="phone" placeholder="123-456-789" />
+
+          <label class="form__label" for="company"
+            >Nazwa Firmy <sup class="form__star">&#9733;</sup>
+          </label>
+          <input class="form__input" type="text" name="company" placeholder="Nazwa Firmy" />
+
+          <label class="form__label" for="message"
+            >Wiadomość: </sup>
+          </label>
+          <textarea name="message" class="form__text-area" placeholder="Wiadomość"></textarea>
+
+          <input class="form__button" type="submit" name="submit" value="wyślij" />
+
+        </form>
+        </section>
+    </main>
     <footer class="footer wrapper">
   
     <div class="footer__bottom">

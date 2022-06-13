@@ -1,0 +1,24 @@
+@use 'colors' as *;
+
+.contact {
+  margin: 1em;
+  color: $snow;
+
+  &__header {
+    font-size: var(--subpage-header-fontsize);
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img-box {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
