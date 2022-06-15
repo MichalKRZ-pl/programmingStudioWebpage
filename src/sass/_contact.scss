@@ -1,8 +1,9 @@
 @use 'colors' as *;
 
 .contact {
-  margin: 1em;
+  padding: 1em;
   color: $snow;
+  background-color: $raisin-black;
 
   &__header {
     font-size: var(--subpage-header-fontsize);
@@ -11,6 +12,12 @@
   &__box {
     display: flex;
     flex-direction: column;
+    margin-top: 1em;
+
+    // border: 1px solid $firebrick;
+    // border-radius: 8px;
+
+    //padding: 1em;
   }
 
   &__img-box {
@@ -20,5 +27,28 @@
 
   &__img {
     width: 100%;
+  }
+
+  &__address-list {
+    list-style: none;
+    margin-top: 1em;
+  }
+  &__address-line {
+    color: $light-gray;
+    &--name {
+      color: $firebrick;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: var(--bigger-text-fontsize);
+    }
+  }
+
+  &__mail-link {
+    color: $blue-munsell;
+
+    &:active,
+    &:visited {
+      color: $blue-munsell;
+    }
   }
 }

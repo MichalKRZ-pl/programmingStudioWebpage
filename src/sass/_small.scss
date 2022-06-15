@@ -19,4 +19,20 @@
       display: none;
     }
   }
+
+  .contact {
+    &__box {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__img-box {
+      max-width: 50%;
+    }
+
+    &__address-list {
+      margin-top: 0;
+      margin: 0 1em;
+    }
+  }
 }
