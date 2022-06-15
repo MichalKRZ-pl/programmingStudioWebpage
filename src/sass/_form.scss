@@ -3,10 +3,6 @@
 .form {
   margin-top: 1em;
   margin-bottom: 2em;
-  //padding: 0.5em 1em;
-
-  // border-radius: 8px;
-  // border: 1px solid $firebrick;
 
   color: $light-gray;
 
@@ -22,31 +18,13 @@
     border: 2px solid transparent;
     border-radius: 4px;
 
-    &--file {
-      background-color: #fff;
-      //color: $dark-gray-background;
-      &::file-selector-button {
-        padding: 0.2em 0.5em;
-        //border: solid 1px $dark-gray-background;
-        border-radius: 8px;
-        //background-color: $light-grey-background;
-        //color: $dark-gray-background;
-        cursor: pointer;
-        transition: color 0.3s, background-color 0.3s;
-        &:hover {
-          background-color: rgb(200, 200, 200);
-          //color: $blue-logo;
-        }
-      }
-    }
-
     &:focus {
       outline: none;
-      //border: 2px solid $red-logo;
+      border: 2px solid $firebrick;
     }
 
     &--error {
-      //border: 2px solid $red-logo;
+      border: 2px solid $firebrick;
       background-color: rgb(150, 150, 150);
     }
   }
@@ -61,7 +39,7 @@
 
     &:focus {
       outline: none;
-      //border: 2px solid $red-logo;
+      border: 2px solid $firebrick;
     }
   }
 
@@ -75,13 +53,11 @@
 
     border: none;
     border-radius: 8px;
-    //background-color: $light-grey-background;
-    //color: $dark-gray-background;
+    background-color: $light-gray;
     cursor: pointer;
     transition: color 0.3s, background-color 0.3s;
     &:hover {
-      background-color: rgb(200, 200, 200);
-      //color: $blue-logo;
+      background-color: $blue-munsell;
     }
   }
 }
