@@ -60,4 +60,13 @@
       background-color: $blue-munsell;
     }
   }
+
+  &__link {
+    color: $blue-munsell;
+
+    &:active,
+    &:visited {
+      color: $blue-munsell;
+    }
+  }
 }
