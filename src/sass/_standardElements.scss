@@ -1,3 +1,5 @@
+@use 'colors' as *;
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -7,7 +9,7 @@ html {
 body {
   font-size: var(--standard-text-fontsize);
   font-family: "Open Sans", sans-serif;
-  background-color: black;
+  background-color: $page-background;
   scroll-behavior: smooth;
 }
 

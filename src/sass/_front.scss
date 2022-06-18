@@ -3,6 +3,7 @@
 .title {
   position: relative;
   height: calc(100vh - 2 * var(--nav-font-size));
+  max-height: 1000px;
 
   color: $snow;
 
