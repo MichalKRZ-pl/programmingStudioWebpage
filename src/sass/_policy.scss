@@ -1,8 +1,9 @@
 @use 'colors' as *;
 
 .policy {
-  color: $snow;
-  margin: 1em;
+  color: $light-gray;
+  padding: 1em;
+  background-color: $raisin-black;
 
   &__header {
     font-size: var(--subpage-header-fontsize);
@@ -15,7 +16,6 @@
 
   &__list {
     margin-left: 1em;
-    color: $light-gray;
     &--sublist {
       list-style-type: lower-alpha;
     }

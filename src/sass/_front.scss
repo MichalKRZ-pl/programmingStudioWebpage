@@ -56,13 +56,11 @@
   }
 
   &__arrow-box {
-    //border: 1px solid $snow;
     transform: translateX(-50%);
     position: absolute;
     bottom: 1em;
     left: 50%;
     z-index: 11;
-    animation: arrow-bounce 3s ease both;
   }
 
   &__arrow {
@@ -70,6 +68,7 @@
     padding: 0.5em;
     color: $snow;
     font-size: 2.8rem;
+    animation: arrow-bounce 3s ease both;
   }
 }
 
