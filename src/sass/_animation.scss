@@ -1,0 +1,26 @@
+@keyframes arrow-bounce {
+  0% {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  57% {
+    transform: translateY(-2px);
+  }
+  64% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
