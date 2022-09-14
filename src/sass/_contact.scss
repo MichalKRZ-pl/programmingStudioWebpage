@@ -1,4 +1,5 @@
 @use 'colors' as *;
+@use 'mixins' as *;
 
 .contact {
   padding: 1em;
@@ -13,11 +14,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 1em;
-
-    // border: 1px solid $firebrick;
-    // border-radius: 8px;
-
-    //padding: 1em;
   }
 
   &__img-box {
@@ -43,12 +39,5 @@
     }
   }
 
-  &__mail-link {
-    color: $blue-munsell;
-
-    &:active,
-    &:visited {
-      color: $blue-munsell;
-    }
-  }
+  @include styled-link($blue-munsell);
 }

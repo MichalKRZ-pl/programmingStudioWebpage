@@ -18,3 +18,15 @@
     opacity: 1;
   }
 }
+
+@mixin styled-link($link-color) {
+  &__link {
+    color: $link-color;
+
+    &:active,
+    &:visited,
+    &:hover {
+      color: $link-color;
+    }
+  }
+}

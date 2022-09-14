@@ -5,7 +5,30 @@
   background-color: $light-gray;
   color: $raisin-black;
 
+  @include styled-link($blue-munsell);
+
+  &__upper {
+    padding: 1em 2em;
+    border-bottom: 1px solid $page-background;
+  }
+
+  &__address-list {
+    list-style: none;
+  }
+
+  &__address-line {
+    color: $raisin-black;
+    &--name {
+      color: $firebrick;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: var(--bigger-text-fontsize);
+    }
+  }
+
   &__bottom {
+    margin-top: 1em;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +42,7 @@
     justify-content: center;
     align-items: center;
   }
-  &__link {
+  &__bottom-link {
     display: inline-block;
     padding: 0.25em 0.5em;
     color: $raisin-black;
