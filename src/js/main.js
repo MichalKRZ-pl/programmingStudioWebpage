@@ -18,23 +18,23 @@ let $allFormFields;
 
 const swiper = new Swiper(".services__swiper", {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 40,
   loop: true,
   breakpoints: {
     // when window width is >= 320px
     576: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 40,
     },
     // when window width is >= 480px
     768: {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 40,
     },
     // when window width is >= 640px
     992: {
       slidesPerView: 4,
-      spaceBetween: 30,
+      spaceBetween: 40,
     },
   },
   pagination: {
@@ -42,7 +42,7 @@ const swiper = new Swiper(".services__swiper", {
     clickable: true,
   },
   autoplay: {
-    delay: 1000,
+    delay: 3000,
     disableOnInteraction: false,
   },
   navigation: {
