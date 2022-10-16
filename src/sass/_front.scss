@@ -91,6 +91,7 @@
 .services {
   background-color: $light-gray;
   padding: 1em 2em;
+  overflow: hidden;
 
   &__header {
     font-size: var(--section-header-fontsize);
@@ -122,6 +123,7 @@
   }
 
   &__card-link {
+    padding: 0.5em 1em;
     color: $firebrick;
   }
 }
@@ -129,7 +131,7 @@
 .swiper {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: visible;
   box-sizing: border-box;
 }
 
