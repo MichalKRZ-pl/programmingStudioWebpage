@@ -78,7 +78,7 @@
   background-color: $raisin-black;
 
   &__header {
-    padding: 0.5em 1em;
+    padding: 0.5em 0.5em;
     font-size: var(--section-header-fontsize);
     text-align: center;
   }
@@ -100,10 +100,28 @@
   &__swiper-card {
     display: flex;
     flex-direction: column;
+
+    border-radius: 16px;
+  }
+
+  &__card-title {
+    padding: 1em 2em;
+    font-size: var(--subpage-header-fontsize);
+    word-break: break-word;
+  }
+
+  &__card-text-box {
+    padding: 1em 1em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__card-link {
+    color: $firebrick;
   }
 
   &__swiper {
-    position: relative;
+    //position: relative;
     margin-bottom: 2em;
   }
 }
@@ -119,9 +137,9 @@
   text-align: center;
   font-size: var(andard-text-fontsize);
   background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 }
 
 .swiper-slide img {
