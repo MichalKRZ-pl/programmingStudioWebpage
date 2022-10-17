@@ -35,4 +35,18 @@
       margin: 0 1em;
     }
   }
+
+  .footer {
+    &__bottom {
+      margin: 0em 1em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__list {
+      order: unset;
+      flex-direction: row;
+    }
+  }
 }
