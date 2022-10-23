@@ -1,2 +1,16 @@
 @media (min-width: 768px) {
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+
+    &__card {
+      max-width: 768px;
+
+      font-size: var(--bigger-text-fontsize);
+
+      &--right {
+        align-self: flex-end;
+      }
+    }
+  }
 }
