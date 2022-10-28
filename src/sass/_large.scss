@@ -1,4 +1,9 @@
 @media (min-width: 992px) {
+  .offer {
+    &__card {
+      padding: 1em 1.5em;
+    }
+  }
 }
 
 @media (min-width: 1200px) {

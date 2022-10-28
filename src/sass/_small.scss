@@ -67,4 +67,10 @@
       justify-content: space-between;
     }
   }
+
+  .offer {
+    &__card {
+      padding: 1em 1.5em;
+    }
+  }
 }

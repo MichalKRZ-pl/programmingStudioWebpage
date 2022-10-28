@@ -13,4 +13,22 @@
       }
     }
   }
+
+  .offer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 1em;
+
+    &__header {
+      grid-column: 1/13;
+    }
+
+    &__card {
+      padding: 1em;
+      grid-column: span 6;
+      &--center {
+        grid-column: 4/10;
+      }
+    }
+  }
 }
