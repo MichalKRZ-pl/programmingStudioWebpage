@@ -11,12 +11,33 @@
 
   &__label {
     margin: 0.2em 0;
+    &--important {
+      display: none;
+    }
   }
 
   &__input {
     padding: 0.2em;
     border: 2px solid transparent;
     border-radius: 4px;
+
+    background-color: $snow;
+    color: $raisin-black;
+
+    &--file {
+      &::file-selector-button {
+        padding: 0.2em 0.5em;
+        border: solid 1px $raisin-black;
+        border-radius: 8px;
+        background-color: $light-gray;
+        color: $raisin-black;
+        cursor: pointer;
+        transition: color 0.3s, background-color 0.3s;
+        &:hover {
+          background-color: $blue-munsell;
+        }
+      }
+    }
 
     &:focus {
       outline: none;
@@ -26,6 +47,10 @@
     &--error {
       border: 2px solid $firebrick;
       background-color: rgb(150, 150, 150);
+    }
+
+    &--important {
+      display: none;
     }
   }
 
